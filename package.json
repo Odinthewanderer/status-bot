@@ -4,7 +4,7 @@
   "description": "Status bot for mumblerine server status objects",
   "main": "bot.js",
   "scripts": {
-    "test": "vows --spec"
+    "test": "npm test"
   },
   "repository": {
     "type": "git",
