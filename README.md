@@ -1,5 +1,10 @@
 # Mumblerines Squad Server Status Bot
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Odinthewanderer/status-bot.svg)](https://greenkeeper.io/)
+[![David](https://img.shields.io/david/Odinthewanderer/status-bot.svg?maxAge=3600)](https://david-dm.org/Odinthewanderer/status-bot)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/957f59e855764ae3ae937b17c93f372f)](https://www.codacy.com/app/Odinthewanderer/status-bot?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Odinthewanderer/status-bot&amp;utm_campaign=Badge_Grade)
+[![Build Status](https://travis-ci.org/Odinthewanderer/status-bot.svg?branch=master)]
+
 ## REQUIREMENTS
 Node version 7+
 
