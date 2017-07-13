@@ -14,11 +14,8 @@ exports.run = async (client, msg) => {
     response.pipe(status2);
   });
 
-  const channelName = 'status-test';
-  let channel = client.channels.find('name', `${channelName}`);
-
   setTimeout(function() {
-    channel.send({
+    msg.channel.send({
       files: [{
         attachment: './status/status2.png',
         name: 'status2.png'
@@ -44,7 +41,7 @@ exports.conf = {
 
 exports.help = {
   name: 'status',
-  description: 'Grabs Mumblerine pub server status from playsquad',
+  description: 'Grabs Mumblerines public server status from playsquad',
   usage: '',
   usageDelim: '',
   type: 'commands',
