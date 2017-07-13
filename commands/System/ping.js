@@ -1,15 +1,15 @@
 exports.run = async (client, msg) => {
   try {
-    const message = await msg.channel.send("Ping?");
+    const message = await msg.channel.send('Ping?');
     await message.edit(`Pong! (Roundtrip took: ${message.createdTimestamp - msg.createdTimestamp}ms. Heartbeat: ${Math.round(client.ping)}ms.)`);
   } catch (e) {
-    client.funcs.log(e, "error");
+    client.funcs.log(e, 'error');
   }
 };
 
 exports.conf = {
   enabled: true,
-  runIn: ["text", "dm", "group"],
+  runIn: ['text', 'dm', 'group'],
   aliases: [],
   permLevel: 10,
   botPerms: [],
@@ -17,8 +17,8 @@ exports.conf = {
 };
 
 exports.help = {
-  name: "ping",
-  description: "Ping/Pong command. I wonder what this does? /sarcasm",
-  usage: "",
-  usageDelim: "",
+  name: 'ping',
+  description: 'Ping/Pong command. I wonder what this does? /sarcasm',
+  usage: '',
+  usageDelim: '',
 };

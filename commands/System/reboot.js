@@ -1,5 +1,5 @@
 exports.run = (client, msg) => {
-  msg.channel.send("Rebooting...")
+  msg.channel.send('Rebooting...')
     .then(() => {
       process.exit();
     })
@@ -10,7 +10,7 @@ exports.run = (client, msg) => {
 
 exports.conf = {
   enabled: false,
-  runIn: ["text", "dm", "group"],
+  runIn: ['text', 'dm', 'group'],
   aliases: [],
   permLevel: 10,
   botPerms: [],
@@ -18,13 +18,13 @@ exports.conf = {
 };
 
 exports.help = {
-  name: "reboot",
-  description: "Reboots the bot.",
-  usage: "",
-  usageDelim: "",
+  name: 'reboot',
+  description: 'Reboots the bot.',
+  usage: '',
+  usageDelim: '',
 };
 
 exports.strings = {
-  "Reboots the bot.": "Redémarre le bot",
-  "Rebooting...": "Redémarrage",
+  'Reboots the bot.': 'Redémarre le bot',
+  'Rebooting...': 'Redémarrage',
 };
