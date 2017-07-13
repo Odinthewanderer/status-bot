@@ -7,6 +7,7 @@
 
 ## REQUIREMENTS
 Node version 7+
+
 RECOMMENDED Node version 8+
 
 ## INSTALLATION
