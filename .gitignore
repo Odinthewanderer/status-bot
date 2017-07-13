@@ -20,6 +20,7 @@ npm-debug.log*
 
 # Config
 ./lib/config.json
+lib/config.json
 
 # Testing
 tests/

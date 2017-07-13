@@ -1,6 +1,6 @@
-const { get: snek } = require("snekfetch");
+const { get: snek } = require('snekfetch');
 const { ensureDirAsync, writeFileAsync, unlinkAsync } = require("fs-extra-promise");
-const { sep, resolve } = require("path");
+const { sep, resolve } = require('path');
 const { runInNewContext } = require("vm");
 
 const piecesURL = "https://raw.githubusercontent.com/dirigeants/komada-pieces/master/";

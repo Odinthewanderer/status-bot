@@ -13,10 +13,10 @@ exports.run = (client, msg, [action, key, ...value]) => {
   if (action === "set") {
     if (!key || value[0] === undefined) return msg.reply("Please provide both a key and value!");
     const conf = client.guildConfs.get(msg.guild.id);
-    if (conf[key].type === "Boolean") conf[key].toggle();
-    if (conf[key].type === "String") conf[key].set(value.join(" "));
-    if (conf[key].type === "Number") conf[key].set(parseInt(value.join("")));
-    if (conf[key].type === "Array") conf[key].add(value);
+    if (conf[key].type === 'Boolean') conf[key].toggle();
+    if (conf[key].type === 'String') conf[key].set(value.join(" "));
+    if (conf[key].type === 'Number') conf[key].set(parseInt(value.join("")));
+    if (conf[key].type === 'Array') conf[key].add(value);
     return msg.reply(`The new value for ${key} is: ${conf[key].data}`);
   } else
 
