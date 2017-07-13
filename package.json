@@ -4,7 +4,7 @@
   "description": "Status bot for mumblerine server status objects",
   "main": "bot.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "eslint commands functions inhibitors events monitors utils classes bot.js"
   },
   "author": "Odin",
   "license": "MIT",
