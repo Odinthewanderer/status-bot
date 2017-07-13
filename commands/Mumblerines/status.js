@@ -14,6 +14,21 @@ exports.run = async (client, msg) => {
     response.pipe(status2);
   });
 
+  const channelName = 'status-test';
+  let channel = client.channels.find('name', `${channelName}`);
+
+  setTimeout(function() {
+    channel.send({
+      files: [{
+        attachment: './status/status1.png',
+        name: 'status1.png'
+      },{
+        attachment: './status/status2.png',
+        name: 'status2.png'
+      }]
+    });
+  }, 200);
+
 };
 
 exports.conf = {
