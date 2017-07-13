@@ -4,7 +4,7 @@
 Node version 7+
 
 ## INSTALLATION
-To begin, clone the repository from here.
+To begin, clone the repository from [HERE!](https://github.com/Odinthewanderer/status-bot.git)
 
 Issue the command:
 
@@ -23,4 +23,5 @@ Edit this file to include your bot token, client id, discord id, and desired pre
 
 ## KNOWN BUGS
 
-There is a small issue that only occurs on the very first startup. You will encounter an error. Just Ctrl+C to kill it and restart the bot. You will never see this error again.
+1. There is a small issue that only occurs on the very first startup. You will encounter an error. Just Ctrl+C to kill it and restart the bot. You will never see this error again.
+2. Occassionally the images will take longer than expected and will paste an incomplete image into the chat. Attempt to rerun the !status command again. 
