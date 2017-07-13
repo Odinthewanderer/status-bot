@@ -4,7 +4,7 @@
   "description": "Status bot for mumblerine server status objects",
   "main": "bot.js",
   "scripts": {
-    "test": "eslint commands functions inhibitors events monitors utils classes bot.js"
+    "test": "commands functions inhibitors events monitors utils classes bot.js"
   },
   "author": "Odin",
   "license": "MIT",
