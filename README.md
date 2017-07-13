@@ -17,7 +17,7 @@ Issue the command:
 
 This will install all required dependencies.
 
-## CONFIGURATOIN
+## CONFIGURATION
 `mv lib/config.json.example lib/config.json`
 
 Edit this file to include your bot token, client id, discord id, and desired prefix (default prefix is !).
