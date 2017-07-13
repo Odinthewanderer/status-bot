@@ -7,6 +7,7 @@
 
 ## REQUIREMENTS
 Node version 7+
+RECOMMENDED Node version 8+
 
 ## INSTALLATION
 To begin, clone the repository from [HERE!](https://github.com/Odinthewanderer/status-bot.git)
