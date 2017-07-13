@@ -7,10 +7,10 @@ Some features of Komada include:
 • Fast Loading times with ES7 Support (Async/Await)
 • Per-server settings for each guild, that can be extended with your own code
 • Customizable Command system with automated usage parsing and easy to use reloading and downloading modules
-• "Monitors" which can watch messages and act on them, like a normal message event (Swear Filters, Spam Protection, etc)
-• "Inhibitors" which can prevent commands from running based on a set of parameters (Permissions, Blacklists, etc)
-• "Providers" which allow you to connect with an outside database of your choosing **soon**:tm:
-• Internal "Functions" which allow you to use functions anywhere where you have access to a client variable.
+• 'Monitors' which can watch messages and act on them, like a normal message event (Swear Filters, Spam Protection, etc)
+• 'Inhibitors' which can prevent commands from running based on a set of parameters (Permissions, Blacklists, etc)
+• 'Providers' which allow you to connect with an outside database of your choosing **soon**:tm:
+• Internal 'Functions' which allow you to use functions anywhere where you have access to a client variable.
 
 We hope to be a 100% customizable framework that can cater to all audiences. We do frequent updates and bugfixes when available.
 If you're interested in us, check us out at https://komada.js.org
@@ -20,16 +20,16 @@ If you're interested in us, check us out at https://komada.js.org
 
 exports.conf = {
   enabled: false,
-  runIn: ["text", "dm", "group"],
-  aliases: ["details", "what"],
+  runIn: ['text', 'dm', 'group'],
+  aliases: ['details', 'what'],
   permLevel: 10,
   botPerms: [],
   requiredFuncs: [],
 };
 
 exports.help = {
-  name: "info",
-  description: "Provides some information about this bot.",
-  usage: "",
-  usageDelim: "",
+  name: 'info',
+  description: 'Provides some information about this bot.',
+  usage: '',
+  usageDelim: '',
 };

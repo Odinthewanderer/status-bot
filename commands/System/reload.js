@@ -2,7 +2,7 @@ exports.run = async (client, msg, [type, name]) => {
   let m;
   let message;
   switch (type) {
-    case "function":
+    case 'function':
       try {
         m = await msg.channel.send(`Attempting to reload function ${name}`);
         message = await client.funcs.reload.function(client, client.clientBaseDir, name);
@@ -11,7 +11,7 @@ exports.run = async (client, msg, [type, name]) => {
         m.edit(`❌ ${err}`);
       }
       break;
-    case "inhibitor":
+    case 'inhibitor':
       try {
         m = await msg.channel.send(`Attempting to reload inhibitor ${name}`);
         message = await client.funcs.reload.inhibitor(client, client.clientBaseDir, name);
@@ -20,7 +20,7 @@ exports.run = async (client, msg, [type, name]) => {
         m.edit(`❌ ${err}`);
       }
       break;
-    case "monitor":
+    case 'monitor':
       try {
         m = await msg.channel.send(`Attempting to reload monitor ${name}`);
         message = await client.funcs.reload.monitor(client, client.clientBaseDir, name);
@@ -29,7 +29,7 @@ exports.run = async (client, msg, [type, name]) => {
         m.edit(`❌ ${err}`);
       }
       break;
-    case "provider":
+    case 'provider':
       try {
         m = await msg.channel.send(`Attempting to reload provider ${name}`);
         message = await client.funcs.reload.provider(client, client.clientBaseDir, name);
@@ -38,7 +38,7 @@ exports.run = async (client, msg, [type, name]) => {
         m.edit(`❌ ${err}`);
       }
       break;
-    case "event":
+    case 'event':
       try {
         m = await msg.channel.send(`Attempting to reload event ${name}`);
         message = await client.funcs.reload.event(client, name);
@@ -47,11 +47,11 @@ exports.run = async (client, msg, [type, name]) => {
         m.edit(`❌ ${err}`);
       }
       break;
-    case "command":
+    case 'command':
       switch (name) {
-        case "all":
+        case 'all':
           await require(`${client.coreBaseDir}utils/loadCommands.js`)(client);
-          msg.channel.send("✅ Reloaded all commands.");
+          msg.channel.send('✅ Reloaded all commands.');
           break;
         default:
           try {
@@ -70,16 +70,16 @@ exports.run = async (client, msg, [type, name]) => {
 
 exports.conf = {
   enabled: false,
-  runIn: ["text", "dm", "group"],
-  aliases: ["r", "load"],
+  runIn: ['text', 'dm', 'group'],
+  aliases: ['r', 'load'],
   permLevel: 10,
   botPerms: [],
   requiredFuncs: [],
 };
 
 exports.help = {
-  name: "reload",
-  description: "Reloads the command file, if it's been updated or modified.",
-  usage: "<function|inhibitor|monitor|provider|event|command> <name:str>",
-  usageDelim: " ",
+  name: 'reload',
+  description: 'Reloads the command file, if it's been updated or modified.',
+  usage: '<function|inhibitor|monitor|provider|event|command> <name:str>',
+  usageDelim: ' ',
 };

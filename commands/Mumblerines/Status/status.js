@@ -1,5 +1,4 @@
 exports.run = async (client, msg, [arg]) => {
-
   // Declare required libraries
   const request = require('request');
   const fs = require('fs');
@@ -7,12 +6,12 @@ exports.run = async (client, msg, [arg]) => {
   // Declare variable public servers (dictionary)
   let pubServers = [];
 
-  // Switch statement that looks at the OPTIONAL argument arg and fills 
+  // Switch statement that looks at the OPTIONAL argument arg and fills
   // the variable pubServers according to those arguments.
   switch(arg) {
     case undefined:
       pubServers = [{ key:'1', value:'https://playsquad.online/servers/79.136.73.35/27100/banner_500x100.png' },
-                    { key:'2', value:'https://playsquad.online/servers/79.136.73.35/27200/banner_500x100.png' }];
+        { key:'2', value:'https://playsquad.online/servers/79.136.73.35/27200/banner_500x100.png' }];
       break;
     case '1':
       pubServers = [{ key:'1', value:'https://playsquad.online/servers/79.136.73.35/27100/banner_500x100.png' }];
@@ -22,23 +21,23 @@ exports.run = async (client, msg, [arg]) => {
       break;
     case 'all':
       pubServers = [{ key:'1', value:'https://playsquad.online/servers/79.136.73.35/27100/banner_500x100.png' },
-                    { key:'2', value:'https://playsquad.online/servers/79.136.73.35/27200/banner_500x100.png' },
-                    { key:'3', value:'https://playsquad.online/servers/79.136.73.35/10200/banner_500x100.png' }];
+        { key:'2', value:'https://playsquad.online/servers/79.136.73.35/27200/banner_500x100.png' },
+        { key:'3', value:'https://playsquad.online/servers/79.136.73.35/10200/banner_500x100.png' }];
       break;
   }
 
   // Declares the results of a request callback function
-  var download = function(uri, filename, callback) {
+  const download = function(uri, filename, callback) {
     request.head(uri, function(err, res, body) {
       request(uri).pipe(fs.createWriteStream(filename)).on('close', callback);
     });
   };
 
   // Examines the dictionary pubServers and loops through each item inside that dictionary,
-  // retrieves the image file for it (and saves it to /status/*. And then pushes it to the 
+  // retrieves the image file for it (and saves it to /status/*. And then pushes it to the
   // requested channel.
-  pubServers.forEach(function (item) {
-    download(`${item.value}`, `./status/status${item.key}.png`, function() {
+  pubServers.forEach(item => {
+    download(`${item.value}`, `./status/status${item.key}.png`, function () {
       msg.channel.send({
         files: [{
           attachment: `./status/status${item.key}.png`,
@@ -47,7 +46,6 @@ exports.run = async (client, msg, [arg]) => {
       });
     });
   });
-  
 };
 
 exports.conf = {
