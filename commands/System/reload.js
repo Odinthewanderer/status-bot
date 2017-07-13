@@ -79,7 +79,7 @@ exports.conf = {
 
 exports.help = {
   name: 'reload',
-  description: 'Reloads the command file, if it's been updated or modified.',
+  description: 'Reloads the command file, if it\'s been updated or modified.',
   usage: '<function|inhibitor|monitor|provider|event|command> <name:str>',
   usageDelim: ' ',
 };

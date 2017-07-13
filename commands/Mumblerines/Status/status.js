@@ -8,21 +8,21 @@ exports.run = async (client, msg, [arg]) => {
 
   // Switch statement that looks at the OPTIONAL argument arg and fills
   // the variable pubServers according to those arguments.
-  switch(arg) {
+  switch (arg) {
     case undefined:
-      pubServers = [{ key:'1', value:'https://playsquad.online/servers/79.136.73.35/27100/banner_500x100.png' },
-        { key:'2', value:'https://playsquad.online/servers/79.136.73.35/27200/banner_500x100.png' }];
+      pubServers = [{ key: '1', value: 'https://playsquad.online/servers/79.136.73.35/27100/banner_500x100.png' },
+        { key: '2', value: 'https://playsquad.online/servers/79.136.73.35/27200/banner_500x100.png' }];
       break;
     case '1':
-      pubServers = [{ key:'1', value:'https://playsquad.online/servers/79.136.73.35/27100/banner_500x100.png' }];
+      pubServers = [{ key: '1', value: 'https://playsquad.online/servers/79.136.73.35/27100/banner_500x100.png' }];
       break;
     case '2':
-      pubServers = [{ key:'2', value:'https://playsquad.online/servers/79.136.73.35/27200/banner_500x100.png' }];
+      pubServers = [{ key: '2', value: 'https://playsquad.online/servers/79.136.73.35/27200/banner_500x100.png' }];
       break;
     case 'all':
-      pubServers = [{ key:'1', value:'https://playsquad.online/servers/79.136.73.35/27100/banner_500x100.png' },
-        { key:'2', value:'https://playsquad.online/servers/79.136.73.35/27200/banner_500x100.png' },
-        { key:'3', value:'https://playsquad.online/servers/79.136.73.35/10200/banner_500x100.png' }];
+      pubServers = [{ key: '1', value: 'https://playsquad.online/servers/79.136.73.35/27100/banner_500x100.png' },
+        { key: '2', value: 'https://playsquad.online/servers/79.136.73.35/27200/banner_500x100.png' },
+        { key: '3', value: 'https://playsquad.online/servers/79.136.73.35/10200/banner_500x100.png' }];
       break;
   }
 

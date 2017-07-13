@@ -102,7 +102,7 @@ const requestAndCheck = async newURL => snek(newURL)
 const runChecks = (client, type, name) => {
   if (!name) throw 'I have stopped the load of this piece because it does not have a name value, and I cannot determine the file name without it. Please ask the Developer of this piece to add it.';
   if (!type) throw 'I have stopped the load of this piece because it does not have a type value, and I cannot determine the type without it. Please ask the Developer of the piece to add it.';
-  if (!types.includes(type)) throw 'I have stopped the loading of this piece because its type value doesn't match those we accept. Please ask the Developer of the piece to fix it.';
+  if (!types.includes(type)) throw 'I have stopped the loading of this piece because its type value doesn\'t match those we accept. Please ask the Developer of the piece to fix it.';
   switch (type) {
     case 'commands':
       if (client.commands.has(name)) throw 'That command already exists in your bot. Aborting the load.';
