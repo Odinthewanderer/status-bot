@@ -1,30 +1,29 @@
 exports.run = async (client, msg) => {
 
+  const request = require('request');
   const https = require('https');
   const fs = require('fs');
 
-  var status1 = fs.createWriteStream("./status/status1.png");
-  var status2 = fs.createWriteStream("./status/status2.png");
-
-  var request = https.get("https://playsquad.online/servers/79.136.73.35/27100/banner_500x100.png", function(response) {
-    response.pipe(status1);
-  }); 
-
-  var request = https.get("https://playsquad.online/servers/79.136.73.35/27200/banner_500x100.png", function(response) {
-    response.pipe(status2);
-  });
-
-  setTimeout(function() {
-    msg.channel.send({
-      files: [{
-        attachment: './status/status2.png',
-        name: 'status2.png'
-      },{
-        attachment: './status/status1.png',
-        name: 'status1.png'
-      }]
+  var download = function(uri, filename, callback) {
+    request.head(uri, function(err, res, body) {
+      request(uri).pipe(fs.createWriteStream(filename)).on('close', callback);
     });
-  }, 400);
+  };
+
+  const pubServers = [{key:'1', value:'https://playsquad.online/servers/79.136.73.35/27100/banner_500x100.png'}, 
+                      {key:'2', value:'https://playsquad.online/servers/79.136.73.35/27200/banner_500x100.png'},
+                      {key:'3', value:'https://playsquad.online/servers/79.136.73.35/10200/banner_500x100.png'}];
+
+  pubServers.forEach(function(item) {
+    download(`${item.value}`, `./status/status${item.key}.png`, function() {
+      msg.channel.send({
+        files: [{
+          attachment: `./status/status${item.key}.png`,
+          name: `status${item.key}.png`
+        }]
+      });
+    });
+  });
 
 };
 
