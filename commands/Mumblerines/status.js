@@ -20,14 +20,14 @@ exports.run = async (client, msg) => {
   setTimeout(function() {
     channel.send({
       files: [{
-        attachment: './status/status1.png',
-        name: 'status1.png'
-      },{
         attachment: './status/status2.png',
         name: 'status2.png'
+      },{
+        attachment: './status/status1.png',
+        name: 'status1.png'
       }]
     });
-  }, 200);
+  }, 400);
 
 };
 
