@@ -27,8 +27,8 @@ exports.run = async (client, msg, [arg]) => {
   }
 
   // Declares the results of a request callback function
-  const download = function(uri, filename, callback) {
-    request.head(uri, function(err, res, body) {
+  const download = function (uri, filename, callback) {
+    request.head (uri, function(err, res, body) {
       request(uri).pipe(fs.createWriteStream(filename)).on('close', callback);
     });
   };
@@ -42,7 +42,7 @@ exports.run = async (client, msg, [arg]) => {
         files: [{
           attachment: `./status/status${item.key}.png`,
           name: `status${item.key}.png`,
-        }]
+        },]
       });
     });
   });
