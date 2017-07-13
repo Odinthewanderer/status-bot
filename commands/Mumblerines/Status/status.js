@@ -24,6 +24,8 @@ exports.run = async (client, msg, [arg]) => {
         { key: '2', value: 'https://playsquad.online/servers/79.136.73.35/27200/banner_500x100.png' },
         { key: '3', value: 'https://playsquad.online/servers/79.136.73.35/10200/banner_500x100.png' }];
       break;
+    default:
+      break;
   }
 
   // Declares the results of a request callback function
