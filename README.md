@@ -28,5 +28,5 @@ Edit this file to include your bot token, client id, discord id, and desired pre
 
 ## KNOWN BUGS
 
-1. ~There is a small issue that only occurs on the very first startup. You will encounter an error. Just Ctrl+C to kill it and restart the bot. You will never see this error again. [ISSUE 1](https://github.com/Odinthewanderer/status-bot/issues/1)~ -- ISSUE CLOSED
-2. ~Occassionally the images will take longer than expected and will paste an incomplete image into the chat. Attempt to rerun the !status command again. [ISSUE 2](https://github.com/Odinthewanderer/status-bot/issues/2)~ -- ISSUE CLOSED
+1. ~There is a small issue that only occurs on the very first startup. You will encounter an error. Just Ctrl+C to kill it and restart the bot. You will never see this error again.~ [ISSUE 1](https://github.com/Odinthewanderer/status-bot/issues/1) -- ISSUE CLOSED
+2. ~Occassionally the images will take longer than expected and will paste an incomplete image into the chat. Attempt to rerun the !status command again.~ [ISSUE 2](https://github.com/Odinthewanderer/status-bot/issues/2) -- ISSUE CLOSED
