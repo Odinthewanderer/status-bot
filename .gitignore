@@ -1,0 +1,29 @@
+# Dependency directories
+node_modules/
+node_modules
+jspm_packages
+
+# Optional npm cache directory
+.npm
+
+# Optional REPL history
+.node_repl_history
+
+# Guild configurations
+bwd
+bwd/
+
+# Logs
+logs/*.log
+*.log
+npm-debug.log*
+
+# Config
+lib/config.json
+
+# Testing
+tests/
+tests
+
+# Swap files
+*.swp
