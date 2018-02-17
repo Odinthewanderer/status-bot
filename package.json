@@ -23,7 +23,7 @@
     "https": "^1.0.0",
     "komada": "^0.19.7",
     "moment": "^2.18.1",
-    "moment-duration-format": "^1.3.0",
+    "moment-duration-format": "^2.2.2",
     "request": "^2.81.0",
     "snekfetch": "^3.2.4"
   },
