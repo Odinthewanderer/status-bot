@@ -36,7 +36,7 @@
     "sodium": "^2.0.1"
   },
   "devDependencies": {
-    "nodemon": "^1.11.0",
+    "nodemon": "^1.19.3",
     "eslint": "^4.2.0",
     "eslint-config-airbnb-base": "^11.2.0",
     "eslint-plugin-import": "^2.7.0"
