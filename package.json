@@ -16,7 +16,7 @@
   "author": "Odin",
   "license": "MIT",
   "dependencies": {
-    "discord.js": "^11.1.0",
+    "discord.js": "^11.6.0",
     "fs": "0.0.2",
     "fs-extra": "^4.0.0",
     "fs-extra-promise": "^1.0.1",
