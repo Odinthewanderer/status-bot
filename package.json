@@ -18,7 +18,7 @@
   "dependencies": {
     "discord.js": "^11.1.0",
     "fs": "0.0.2",
-    "fs-extra": "^4.0.0",
+    "fs-extra": "^9.0.0",
     "fs-extra-promise": "^1.0.1",
     "https": "^1.0.0",
     "komada": "^0.19.7",
